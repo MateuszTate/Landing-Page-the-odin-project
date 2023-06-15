@@ -1,34 +1,230 @@
-*{
+* {
     font-family: 'Roboto', sans-serif;
-}
-
-body{
+  }
+  
+  body {
     margin: 0;
     padding: 0;
-}
-
-.container.one .header{
+    box-sizing: border-box;
+  }
+  
+  .container.one .header {
     background-color: #1F2937;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 15px;
-    padding-left: 150px;
-    padding-right: 150px;
-}
-
-.container.one .header .logo{
+    padding-bottom: 100px;
+  }
+  
+  .container.one .header .logo {
     color: #F9FAF8;
     font-size: 24px;
-    font-weight: bold;
-}
-
-.container.one .header .links{
+    font-weight: 500;
+  }
+  
+  .container.one .header .links {
     display: flex;
     gap: 18px;
-}
-
-.container.one .header .links .link{
+  }
+  
+  .container.one .header .links .link {
     color: #E5E7EB;
     font-size: 18px;
-}
+  }
+  
+  @media screen and (min-width: 1200px) {
+    .container.one .header,
+    .container.one .hero,
+    .container.four {
+      padding-left: 300px;
+      padding-right: 300px;
+    }
+  }
+
+  
+  
+  .container.one .hero {
+    display: flex;
+    background-color: #1F2937;
+    padding-bottom: 100px;
+    
+  }
+
+  .container.one .hero .mainText {
+    font-size: 48px;
+    color: #F9FAF8;
+    font-weight: 900;
+  }
+
+  .container.one .hero .subText {
+    font-size: 18px;
+    color: #E5E7EB;
+  }
+
+  .container.one .hero .signButton button{
+    background-color: #3882F6;
+    color: #F9FAF8;
+    border: none;
+    border-radius: 5px;
+    padding: 7px 35px 7px 35px;
+    font-weight: 500;
+    margin-top: 10px;
+  }
+
+  .container.one .hero .image{
+    background-color: #949596;
+    width: 700px;
+    height: 220px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+  }
+
+  @media screen and (max-width: 1400px){
+    .container.one .hero .image{
+      height: 110px;
+      width: 350px;
+    }
+  }
+
+  
+
+  .container.one .hero .left{
+    /* background-color: red; */
+    padding-right: 50px;
+    display: flex;
+    flex-direction: column;
+    /* width: 40%; */
+    /* border: 2px solid red; */
+  }
+
+  .container.one .hero .right{
+    /* background-color: red; */
+    padding-left: 120px;
+
+  }
+
+
+  .container.two .cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container.two .cards .card{
+    padding: 0px 30px 0px 30px;
+    text-align: center;
+  }
+
+  .container.two {
+    padding: 50px 500px 100px 500px;
+    /* border: 2px solid red; */
+  }
+
+  .container.two .card .cardPhoto {
+    width: 150px;
+    height: 150px;
+    border: 3px solid #3882F6;
+    border-radius: 10px;
+    
+  }
+
+  .container.two .header{
+    display: flex;
+    justify-content: center;
+    color: #1F2937;
+    font-size: 36px;
+    font-weight: 900;
+    margin-bottom: 50px;
+  }
+
+  .container.two .cardText{
+    /* border: 2px solid green; */
+    margin-top: 5px;
+    width: 150px;
+  }
+
+
+  .container.three{
+    background-color: #E5E7EB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 100px 0 100px 0;
+  }
+
+  .container.three .textMain{
+    width: 840px;
+    display: flex;
+    margin-left: 40px;
+    /* border: 2px solid red; */
+    font-size: 36px;
+    font-weight: 300;
+    font-style: italic;
+    
+  }
+
+  .container.three .textSignature {
+    width: 740px;
+    display: flex;
+    justify-content: end;
+    font-weight: 900;
+  }
+
+  .container.four{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 100px 0 100px 0;
+    
+  }
+
+  .container.four .mainBox{
+    background-color: #3882F6;
+    width: 100%;
+    padding: 50px 100px 50px 100px;
+    display: flex;
+    justify-content: center;
+    gap: 400px;
+    border-radius: 10px;
+  }
+
+  .container.four .mainBox .left .header{
+    color: #F9FAF8;
+    font-size: 24px;;
+  }
+
+  .container.four .mainBox .left .sub{
+    color: #F9FAF8;
+    
+    font-weight: 200;
+  }
+
+  .container.four .mainBox .left{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .container.four .mainBox .right button{
+    background-color: #3882F6;
+    color: #F9FAF8;
+    border: none;
+    border: solid 2px #F9FAF8;
+    border-radius: 5px;
+    padding: 7px 35px 7px 35px;
+    font-weight: 500;
+    margin-top: 10px;
+  }
+
+  .container.five{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1F2937;
+    color:#E5E7EB;
+    padding: 30px 0 30px 0;
+  }
