@@ -7,6 +7,10 @@
     padding: 0;
     box-sizing: border-box;
   }
+
+  a{
+    all:unset;
+  }
   
   .container.one .header {
     background-color: #1F2937;
@@ -72,7 +76,7 @@
     margin-top: 10px;
   }
 
-  .container.one .hero .image{
+  /* .container.one .hero .image{
     background-color: #949596;
     width: 700px;
     height: 220px;
@@ -80,7 +84,7 @@
     justify-content: center;
     align-items: center;
     color: white;
-  }
+  } */
 
   @media screen and (max-width: 1400px){
     .container.one .hero .image{
@@ -227,4 +231,32 @@
     background-color: #1F2937;
     color:#E5E7EB;
     padding: 30px 0 30px 0;
+  }
+
+  .container.four .mainBox .right button:hover{
+    background-color: #F9FAF8;
+    color: #3882F6;
+
+  }
+
+  .container.one .hero .signButton button:hover{
+    background-color: #F9FAF8;
+    color: #3882F6;
+  }
+
+  .container.one .hero .image img{
+    border-radius: 10px;
+  }
+
+  .container.one .header .links .link:hover{
+    color: #3882F6;
+  }
+
+  .container.one .hero .left a:hover{
+    color: #3882F6;
+  }
+  
+  a:visited {
+    color: #F9FAF8;
+    text-decoration: none;
   }
